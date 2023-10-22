@@ -173,8 +173,8 @@ details div{
     background-color: var(--secondary-color);
     box-shadow: 2px 2px 2px 2px gray;
     color:white;
-    font-weight: bold;
-    text-align: center;
+    /*font-weight: bold;*/
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,37 +11,10 @@
 
 <body>
     <header>
-
-        <div class="slider-box">
-
-            <ul>
-                <li>
-                    <img src="img/img1.jpeg" alt="paisaje">
-                </li>
-                <li>
-                    <img src="img/img10.jpeg" alt="paisaje">
-                </li>
-                <li>
-                    <img src="img/img4.jpeg" alt="paisaje">
-                </li>
-                <li>
-                    <img src="img/img3.jpeg" alt="paisaje">
-                </li>
-            </ul>
-
-        </div>
-        <img class="img-1" src="img/logo-transparente.png" alt="logo">
-
+    <!-- el contenido esta en el script -->
     </header>
     <nav class="navegador">
-        <ul>
-            <li><a class="icono" href="index.html">Home</a></li>
-            <li><a class="icono" href="quienessomos.html">Quienes somos</a></li>
-            <li><a class="icono" href="registroylogin.html">Registro y Login</a></li>
-            <li><a class="icono" href="destinos.html">Destinos</a></li>
-            <li><a class="icono" href="contactoysucursales.html">Contacto y Sucursales</a></li>
-            <li><a class="icono" href="preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-        </ul>
+       <!-- el contenido esta en el script -->
     </nav>
     <aside class="formulario">
         
@@ -83,7 +55,8 @@
                 <li> 9 dias y 8 noches </li>
                 <li>Hospedaje media pension</li>
             </ul>
-            <button> Para mas informacion</button> <a href="http://"></a>
+            <a href="destinos.html">
+            <button> Para mas informacion</button> </a>
         </div>
         <div class="viajes">
             <img src="img/buenos aires.jpeg" alt="buenos aires">
@@ -94,7 +67,8 @@
                 <li> 5 dias y 4 noches </li>
                 <li>Hospedaje media pension</li>
             </ul>
-            <button> Para mas informacion</button>
+            <a href="destinos.html">
+            <button> Para mas informacion</button></a>
         </div>
         <div class="viajes">
             <img src="img/cataratas.jpeg" alt="Cataratas">
@@ -105,7 +79,8 @@
                 <li> 3 dias y 2 noches </li>
                 <li>Hospedaje media pension</li>
             </ul>
-            <button> Para mas informacion</button>
+            <a href="destinos.html">
+            <button> Para mas informacion</button></a>
         </div>
         <div class="viajes">
             <img src="img/bariloche.jpeg" alt="Cataratas">
@@ -116,7 +91,8 @@
                 <li> 10 dias y 9 noches </li>
                 <li>Hospedaje media pension</li>
             </ul>
-            <button> Para mas informacion</button>
+            <a href="destinos.html">
+            <button> Para mas informacion</button></a>
         </div>
         <h2> Testimonios de Clientes</h2>
         <section class="testimonios">
@@ -124,27 +100,27 @@
             <ul>
                 <div>
                     <li>
-                        <img src="img/Juan perez.jpeg" alt="Juan Perez">
+                        <div class="img-container0"></div>
                         <blockquote> Gran experiencia fueron muy calidos y me ayudaron a que mi viaje se inolvidable
                         </blockquote>
-                        <cite> Juan Perez</cite>
+                        <cite id="nombre0"></cite>
                     </li>
                 </div>
                 <div>
                     <li>
-                        <img src="img/nancy ortiz.jpeg" alt="Nancy Ortiz">
+                        <div class="img-container1"></div>
                         <blockquote> Siempre soñe mi luna de miel pero nunca crei que fuera posible hacerla tan especial
                             hasta que los contacte y se encargaron de todos los detalles, mas que agradecida!
                         </blockquote>
-                        <cite> Nancy Ortiz</cite>
+                        <cite id="nombre1"></cite>
                     </li>
                 </div>
                 <div>
                     <li>
-                        <img src="img/julieta gomez.jpeg" alt="Julieta Gomez">
+                        <div class="img-container2"></div>
                         <blockquote> Hicimos un viaje con amigas y encontramos los mejores precios y excursiones!
                             Gracias totales!</blockquote>
-                        <cite> Julieta Gomez</cite>
+                            <cite id="nombre2"></cite>
                     </li>
                 </div>
             </ul>
@@ -169,10 +145,12 @@
                 <ul>
                     <li>
                         <img src="img/destino.jpeg" alt="destinos">
-                        <h3>Los 10 destinos mas elegidos por los turistas de Argentina</h3>
-                        <p>Conoce los destinos mas solicitados y las caracteristicas de cada destino soñado, te daran
+                        <h3>Los 10 lugares más visitados del Planeta</h3>
+                        <p>Tomá nota de esta lista de los 10 lugares turísticos más visitados del mundo y que te darán
                             ganas de viajar! </p>
-                        <button> Continuar leyendo</button>
+                        <a href="./destinosMundial.html">
+                            <button> Continuar leyendo</button>
+                        </a>
                     </li>
                 </ul>
             </article>
@@ -180,25 +158,11 @@
     </main>
 
     <footer class="pie">
-        <div class="logo-footer">
-            <img height="150px" src="img/Logo azul.jpeg" alt="logo">
-        </div>
-        <div class="social">
-            <p><b>&copy;Sitio desarrollado en Codo a Codo
-                    por: Alejandra Blanco,
-                    Laura Diaco y William Chan</b></p>
-            <a href="https://api.whatsapp.com/send?phone=1164941199">
-                <img width="40" src="img/Whatsapp.jpeg" alt="Whatsapp"></a>
-            <a href="https://www.facebook.com/Laura.diaco.98">
-                <img width="40" src="img/facebook.jpeg" alt="Facebook"></a>
-            <a href="https://www.instagram.com/laura.diaco/">
-                <img width="40" src="img/instagram.jpeg" alt="Instagram"></a>
-        </div>
-
+        <!-- el contenido esta en el script -->
     </footer>
 
-
-
+    <script src="js/headerfooterynav.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

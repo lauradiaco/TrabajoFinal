@@ -1,49 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "NunitoSans Regular", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-:root{
-    --primary-color:#E9D9A6;
-    --primary-color-dark:#184E77;
-    --secondary-color:#43C59E;
-    --secondary-color-dark:#264c4a;
+
+:root {
+    --primary-color: #E9D9A6;
+    --primary-color-dark: #184E77;
+    --secondary-color: #43C59E;
+    --secondary-color-dark: #264c4a;
     --gray-color: #808080;
 }
 
 /*HEADER*/
-header{
+header {
     display: flex;
     justify-content: center;
     padding: 0;
     height: 400px;
 }
+
 .slider-box {
     width: auto;
     height: 400px;
     margin: 0px auto 0;
     overflow: hidden;
 }
+
 .slider-box ul {
     display: flex;
     padding: 0;
     width: 400%;
     animation: slide 20s infinite alternate ease-in-out;
 }
+
 .slider-box li {
     width: 100%;
     list-style: none;
     position: relative;
 }
-.slider-box img{
+
+.slider-box img {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
     background-size: cover;
     margin: 0;
 }
-.img-1{
+
+.img-1 {
     width: auto;
     height: auto;
     position: absolute;
@@ -52,46 +58,71 @@ header{
 
 @keyframes slide {
 
-    0% { margin-left: 0; }
-    20% { margin-left: 0; }
+    0% {
+        margin-left: 0;
+    }
 
-    25%  {margin-left:-100%; }
-    45% { margin-left:-100%; }
+    20% {
+        margin-left: 0;
+    }
 
-    50% { margin-left:-200%; }
-    70% { margin-left:-200%; }
+    25% {
+        margin-left: -100%;
+    }
 
-    75% { margin-left:-300%; }
-    100% { margin-left:-300%; }
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
 
 /*NAVEGADOR*/
-.navegador{
-    background-color:var(--secondary-color);
+.navegador {
+    background-color: var(--secondary-color);
     box-shadow: 2px 2px 5px var(--gray-color);
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
-.navegador > ul >li{
+
+.navegador>ul>li {
     display: inline-block;
-    margin-left: 25px;
-    list-style-type: none;   
+
+    list-style-type: none;
 }
-.navegador > ul >li> a{
-    color:white;
+
+.navegador>ul>li>a {
+    color: white;
     padding: 20px 30px;
     border-right: solid 1px var(--gray-color);
     font-size: 16px;
     text-decoration: none;
 }
-.navegador > ul >li> ul{
+
+.navegador>ul>li>ul {
     display: none;
-    position:absolute;
+    position: absolute;
     margin-top: 10px;
 }
-.navegador > ul >li> a:hover{
+
+.navegador>ul>li>a:hover {
     background-color: var(--primary-color-dark);
 }
-.navegador > ul >li> ul> li> a{
+
+.navegador>ul>li>ul>li>a {
     display: block;
     color: white;
     background-color: var(--secondary-color);
@@ -99,52 +130,58 @@ header{
     font-size: 16px;
     border-top: solid 1px var(--gray-color);
 }
-.navegador > ul >li> ul> li> a:hover{
+
+.navegador>ul>li>ul>li>a:hover {
     background-color: var(--secondary-color-dark);
 }
-.navegador >ul> li:hover > ul{
+
+.navegador>ul>li:hover>ul {
     display: block;
     box-shadow: 2px 2px var(--gray-color);
 }
-.navegador> ul >li> a{
+
+.navegador>ul>li>a {
     text-align: center;
     display: block;
 }
-.navegador> ul> li> ul> li{
+
+.navegador>ul>li>ul>li {
     text-align: center;
 }
 
 /*FOOTER*/
 
-.pie{
+.pie {
     background-color: var(--secondary-color-dark);
     margin: 0;
     padding: 0;
     width: 100%;
     display: inline-flex;
-    justify-content:center;
-    
-}
-.social{
-   margin:50px;
-   margin-top: 5px;
-}
-.social> a> img{
-    border-radius: 100%;
- }
+    justify-content: center;
 
- /*BODY*/
- body{
+}
+
+.social {
+    margin: 50px;
+    margin-top: 5px;
+}
+
+.social>a>img {
+    border-radius: 100%;
+}
+
+/*BODY*/
+body {
     background-color: var(--primary-color);
-    
- }
+
+}
 
 /* **********************************************************
-                    QUIENES SOMOS 
+                    SUCURSALES 
  ************************************************************ */
 
 
-.viajes2{
+.tarjeta {
     color: white;
     margin: 20px;
     text-align: left;
@@ -155,53 +192,59 @@ header{
     display: inline-block;
 }
 
-.viajes2 h3{
+.tarjeta h3 {
     text-align: center;
-    color: var(--secondary-color);
 }
 
- @media(max-width:768px) {
-    header{
-         width:auto;
-         height:auto;
-         display: flex;
-         justify-content: left;
-     }
-     .img-1{
-         width: 300px;
-         height:300px;
-         padding:0%;
-         left: 95px;
-         top: 5px;
-         position: absolute;
-         z-index: 1;
-     }
-     .slider-box{
-         width: 100%;
-         height: 100%;
-     }
-     .navegador > ul > li{
-             width: 100%;
-             margin: 0;
-             border-bottom: solid 1px var(--gray-color);
-     } 
-     .navegador > ul > li a{
-         text-align: center;
-         display: block;
-     }
-     .navegador > ul > li > ul{
-         width: 100%;
-     }
-     .navegador > ul > li > ul > li{
-             text-align: center;
-     }
-    .texto{
-        text-align: center;
-        
+@media(max-width:768px) {
+    header {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: left;
     }
-     .pie{
-         display: block;
-         justify-content: center;
-     }                
- }
 
+    .img-1 {
+        width: 300px;
+        height: 300px;
+        padding: 0%;
+        left: 95px;
+        top: 5px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .slider-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navegador>ul>li {
+        width: 100%;
+        margin: 0;
+        border-bottom: solid 1px var(--gray-color);
+    }
+
+    .navegador>ul>li a {
+        text-align: center;
+        display: block;
+    }
+
+    .navegador>ul>li>ul {
+        width: 100%;
+    }
+
+    .navegador>ul>li>ul>li {
+        text-align: center;
+    }
+
+    .texto {
+        text-align: center;
+
+    }
+
+    .pie {
+        display: block;
+        justify-content: center;
+    }
+}
