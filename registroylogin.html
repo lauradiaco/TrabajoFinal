@@ -5,44 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiaBlaCha Turismo Diferente</title>
-    <link rel="stylesheet" href="css/estilosloginyregistro.css">
-    <link rel="preconnect" href="fonts/NunitoSans_10pt_Condensed-Regular.ttf">
-    <link rel="shortcut icon" href="img/logo azul.png" type="image/x-icon">
-    <script src="js/registro.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="./fonts/NunitoSans_10pt_Condensed-Regular.ttf">
+    <link rel="shortcut icon" href="./img/logo azul.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilosloginyregistro.css">
 </head>
 
 <body>
     <div class="contenedor">
-        <header>
-        <!-- el contenido esta en el script -->
-        </header>
+        <header> </header>
 
-        <nav class="navegador">
-          <!-- el contenido esta en el script -->  
-        </nav>
+        <nav class="navegador"> </nav>
 
         <main class="principal" style=" display: flex; flex-direction: column;">
-        <div class="formulario"></div>
-            <div style="margin-left: 450px;">
-                <p>Nombre : <input type="text" name="nombre" id="nombre" /></p><br>
-                <p>Apellido : <input type="text" name="apellido" id="apellido" /></p><br>
-                <p>Teléfono : <input type="text" name="tele" id="tele" /></p><br>
-                <p>e-Mail : <input type="email" name="email" id="email" /></p><br>
-                <p>Usuario : <input type="text" name="usuario" id="usuario" /></p><br>
-                <p>Contraseña <input type="password" name="psw" id="psw" /></p>
 
-                <input style="margin-left: 400px;" type="button" id="sArray" value=" Guardar datos "
-                    onclick="Javascript:graboDatos()">
-                <br><br>
-            </div>
+            <form name='f1' onsubmit="return validar();">
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" value="" />
+                <div id="validar_nombre" style="color:red;"></div>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" value="" />
+                <div id="validar_apellido" style="color:red;"></div>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" name="telefono" id="telefono" value="" />
+                <div id="validar_telefono" style="color:red;"></div>
+
+                <label for="email">Mail:</label>
+                <input type="text" name="email" id="email" value="" />
+                <div id="validar_email" style="color:red;"></div>
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" value="" />
+                <div id="validar_usuario" style="color:red;"></div>
+
+                <label for="psw">Clave:</label>
+                <input type="text" name="psw" id="psw" value="" />
+                <div id="validar_psw" style="color:red;"></div>
+
+                <br>
+
+                <input type="submit" value=" Guardar datos ">
+                <br>
+
+            </form>
+
+
+
         </main>
 
 
+        <footer class="pie"> </footer>
+    </div>
 
-        <footer class="pie">
-            <!-- el contenido esta en el script -->
-        </footer>
-        <script src="js/headerfooterynav.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/headerfooterynav.js"></script>
+    <script src="./js/registro.js"></script>
 </body>
 
 </html>

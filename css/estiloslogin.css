@@ -236,4 +236,9 @@ form input[type="password"]{
          }                
      }
     
+/*login*/
+.principal{
+    background-color:var(--primary-color);
+    margin-top:-15px;
 
+    }
