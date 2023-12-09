@@ -240,5 +240,6 @@ form input[type="password"]{
 .principal{
     background-color:var(--primary-color);
     margin-top:-15px;
+    margin-bottom: -10px;
 
     }
